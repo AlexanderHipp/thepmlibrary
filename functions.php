@@ -1,6 +1,9 @@
 <?php
 include_once get_template_directory() . '/theme-includes.php';
 
+/* Disable WordPress Admin Bar for all users but admins. */
+show_admin_bar(false);
+
 if (!function_exists('superfood_elated_styles')) {
     /**
      * Function that includes theme's core styles
