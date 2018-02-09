@@ -1,0 +1,17 @@
+1.2
+- Added WooCommerce 3.2.6 compatibility
+- Added Envato Market plugin as required
+- Added recommended plugins (WooCommerce and Contact Form 7)
+- Updated Elated CPT plugin to 1.0.1
+- Updated WPBakery Page Builder to 5.4.5
+- Updated Revolution Slider to 5.4.6.4
+- Fixed potential security issue when saving theme options
+- Fixed Contact Form 7 in Vertical Split Slider
+- Improved import for Revolution slider slides
+- Improved import functionality for PHP 7.1
+
+1.1
+- Added WooCommerce 3+ compatibility
+- Updated Visual Composer 5.2
+- Updated Revolution Slider 5.4.5.1
+- Fixed https problem with links

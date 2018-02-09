@@ -1,0 +1,1 @@
+<?php superfood_elated_get_footer(); ?>
