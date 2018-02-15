@@ -136,9 +136,9 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 40px;
 }
 
 h3 {
@@ -918,6 +918,10 @@ ul.wpb_thumbnails-fluid > li,
 .vc_row .wpb_gmaps_widget .wpb_wrapper {
   padding: 0;
   background-color: transparent;
+}
+
+.wpb_wrapper {
+  min-width: 300px;
 }
 
 .eltdf-parallax-holder {
@@ -4323,6 +4327,13 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   }
 }
 
+@media only screen and (max-width: 1399px) {
+  h2 {
+    font-size: 24px;  
+    line-height: 28px;
+  }  
+}
+
 @media only screen and (max-width: 1024px) {
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 15% 0;
@@ -4332,6 +4343,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 @media only screen and (max-width: 768px) {
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 28% 0;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 25px;
   }
 }
 
@@ -12104,6 +12119,9 @@ button.eltdf-btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.09);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.09);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.09);
 }
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item .eltdf-mg-item-outer {
@@ -12116,6 +12134,7 @@ button.eltdf-btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #fff;  
 }
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item .eltdf-mg-item-inner {
@@ -12132,7 +12151,7 @@ button.eltdf-btn {
   height: 100%;
   width: 100%;
   vertical-align: middle;
-  padding: 10px 40px;
+  padding: 10px 25px;
 }
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item .eltdf-mg-image {
@@ -12200,8 +12219,54 @@ button.eltdf-btn {
   z-index: 2;
 }
 
+/*
+2x2 Square Big
+*/
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-square-big .eltdf-mg-item-outer {
+  height: 25%;
+  top: 75%;
+}
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-square-big .eltdf-mg-image {
+  height: 75%;
+}
+
+
+/*
+2x1 Landscape
+*/
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-rectangle-landscape .eltdf-mg-item-outer {
+  height: 50%;
+  top: 50%;
+}
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-rectangle-landscape .eltdf-mg-image {
+  height: 50%;
+}
+
+
+/*
+1x2 Portrait
+*/
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-rectangle-portrait .eltdf-mg-item-outer {  
+  height: 33%;
+  top: 67%;
+}
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-rectangle-portrait .eltdf-mg-image {
+  height: 67%;
+}
+
+
+/* End */
+
+
+
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard .eltdf-mg-item-inner {
-  opacity: 0;
+  opacity: 100;
   -webkit-transition: opacity 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89), background-color 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
   -moz-transition: opacity 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89), background-color 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
   transition: opacity 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89), background-color 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
@@ -12217,7 +12282,7 @@ button.eltdf-btn {
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard .eltdf-mg-item-title,
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard .eltdf-mg-item-text {
-  color: #fff;
+  color: #222222;
 }
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard img {
@@ -12229,7 +12294,7 @@ button.eltdf-btn {
   transform: translateZ(0px);
 }
 
-.eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard:hover .eltdf-mg-image {
+/* .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard:hover .eltdf-mg-image {
   -webkit-transform: scale(1.05, 1.05);
   -moz-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
@@ -12238,7 +12303,7 @@ button.eltdf-btn {
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard:hover .eltdf-mg-image-overlay {
   opacity: 0.95;
   background: #00bdbb;
-}
+} 
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-standard:hover .eltdf-mg-item-inner {
   opacity: 1;
@@ -12250,7 +12315,7 @@ button.eltdf-btn {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}
+} */
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-simple.eltdf-mg-skin-default .eltdf-mg-item-inner {
   background-color: #00bdbb;

@@ -12,7 +12,7 @@ if (!function_exists('superfood_elated_styles')) {
 
         //include theme's core styles
         wp_enqueue_style('superfood_elated_default_style', ELATED_ROOT . '/style.css');
-        wp_enqueue_style('superfood_elated_modules', ELATED_ASSETS_ROOT . '/css/modules.min.css');
+        wp_enqueue_style('superfood_elated_modules', ELATED_ASSETS_ROOT . '/css/modules.css');
 
         superfood_elated_icon_collections()->enqueueStyles();
 
@@ -39,7 +39,7 @@ if (!function_exists('superfood_elated_styles')) {
 
         //is responsive option turned on?
         if (superfood_elated_is_responsive_on()) {
-            wp_enqueue_style('superfood_elated_modules_responsive', ELATED_ASSETS_ROOT . '/css/modules-responsive.min.css');
+            wp_enqueue_style('superfood_elated_modules_responsive', ELATED_ASSETS_ROOT . '/css/modules-responsive.css');
 
             //is woocommerce installed?
             if (superfood_elated_is_woocommerce_installed()) {
