@@ -510,7 +510,6 @@ ul.wpb_thumbnails-fluid > li,
   padding: 0 24px!important;
   letter-spacing: 0!important;
   margin: 0 0 0 -5px!important;
-
 }
 
 .signup-box-newsletter #mc_embed_signup input.email {
@@ -4378,6 +4377,9 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   h2 {
     font-size: 21px;
     line-height: 25px;
+  }
+  .signup-box-newsletter .button {    
+    margin: 0px!important;
   }
 }
 
@@ -12248,6 +12250,10 @@ button.eltdf-btn {
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+
+.eltdf-masonry-gallery-holder .eltdf-mg-item:hover .eltdf-mg-item-title {
+  color: #B11A5D!important;
 }
 
 /*

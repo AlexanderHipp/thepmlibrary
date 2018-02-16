@@ -1,10 +1,16 @@
 <article class="<?php echo esc_attr($item_classes) ?>">
 	<div class="eltdf-mg-content">
 		<?php if (has_post_thumbnail()) { ?>
-			<div class="eltdf-mg-image">
-				<div class="eltdf-mg-image-overlay"></div>
-				<?php the_post_thumbnail(); ?>
-			</div>
+			<?php if (!empty($item_link)) { ?>
+				<a itemprop="url" href="<?php echo esc_url($item_link); ?>" target="<?php echo esc_attr($item_link_target); ?>">				
+				<?php } ?>
+					<div class="eltdf-mg-image">
+						<div class="eltdf-mg-image-overlay"></div>
+						<?php the_post_thumbnail(); ?>
+					</div>
+				<?php if (!empty($item_link)) { ?>	
+				</a>				
+			<?php } ?>
 		<?php } ?>
 		<div class="eltdf-mg-item-outer">
 			<div class="eltdf-mg-item-inner">
