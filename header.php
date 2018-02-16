@@ -8,7 +8,11 @@
      */
     do_action('superfood_elated_header_meta');
 
-    wp_head(); ?>
+    ?>
+    <!-- Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class();?> itemscope itemtype="http://schema.org/WebPage">
     <?php superfood_elated_get_side_area(); ?>

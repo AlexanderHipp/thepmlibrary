@@ -2740,7 +2740,7 @@
             pieChartHolder.each(function () {
                 var thisPieChartHolder = $(this),
                     pieChart = thisPieChartHolder.children('.eltdf-pc-percentage'),
-                    barColor = '#00bdbb',
+                    barColor = '#B11A5D',
                     trackColor = '#f7f7f7',
                     lineWidth = 3,
                     size = 176;

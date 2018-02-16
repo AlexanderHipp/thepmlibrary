@@ -74,7 +74,7 @@
                     $params['target'] = '_self';
                     $params['type'] = 'solid';
                     $params['size'] = 'large';
-                    $params['border_color'] = '#00bdbb';
+                    $params['border_color'] = '#B11A5D';
 
                     if (superfood_elated_options()->getOptionValue('404_button_style') == 'light-button') {
                         $params['custom_class'] = 'eltdf-btn-light';
