@@ -4368,19 +4368,57 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 15% 0;
   }
+
+  .vc_gitem-post-meta-field-author_name:not(:empty),
+  .vc_gitem-post-meta-field-author_name_2:not(:empty),
+  .vc_gitem-post-meta-field-author_name_3:not(:empty) {    
+    padding: 10px 0px 20px 12px;
+    margin-bottom: 5px;
+  }
+
+  .vc_gitem-post-meta-field-author_name:empty,
+  .vc_gitem-post-meta-field-author_name_2:empty,
+  .vc_gitem-post-meta-field-author_name_3:empty {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .vc_gitem-post-meta-field-author_profile_image, 
+  .vc_gitem-post-meta-field-author_profile_image_2, 
+  .vc_gitem-post-meta-field-author_profile_image_3 {
+    clear: both;
+    margin: 0px!important;  
+  }
+  
+  .vc_gitem-post-meta-field-author_name:empty,
+  .vc_gitem-post-meta-field-author_name_2:empty,
+  .vc_gitem-post-meta-field-author_name_3:empty {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 28% 0;
   }
-  h2 {
+  .eltdf-masonry-gallery-holder h2 {
     font-size: 21px;
     line-height: 25px;
   }
   .signup-box-newsletter .button {    
     margin: 0px!important;
   }
+  .vc_gitem-post-meta-field-amazon_link {    
+    height: 56px!important;
+  }
+  .vc_gitem-post-data-source-post_excerpt {
+    line-height: 24px!important;
+  }
+  .vc_gitem-post-meta-field-amazon_link a {    
+    font-size: 18px!important;
+    padding: 14px 20px!important;
+  }
+
 }
 
 /* ==========================================================================
@@ -5518,6 +5556,10 @@ body[class*='eltdf-sticky'] .eltdf-sticky-header .eltdf-search-opener .eltdf-sea
 /* ==========================================================================
 #Sticky Nav header styles - end
 ========================================================================== */
+.eltdf-mobile-header {
+  min-width: 300px;
+}
+
 .eltdf-mobile-header .eltdf-mobile-nav {
   display: none;
   background-color: #fff;
@@ -5904,7 +5946,7 @@ body[class*='eltdf-sticky'] .eltdf-sticky-header .eltdf-search-opener .eltdf-sea
   position: relative;
   z-index: 2;
   background-color: #fff;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #ececec;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -5931,8 +5973,7 @@ body[class*='eltdf-sticky'] .eltdf-sticky-header .eltdf-search-opener .eltdf-sea
   vertical-align: middle;
 }
 
-.eltdf-page-header .eltdf-fixed-wrapper {
-  position: fixed;
+.eltdf-page-header .eltdf-fixed-wrapper {  
   width: 100%;
   left: 0px;
   top: 0px;
@@ -12255,6 +12296,95 @@ button.eltdf-btn {
 .eltdf-masonry-gallery-holder .eltdf-mg-item:hover .eltdf-mg-item-title {
   color: #B11A5D!important;
 }
+
+/* Collection List */
+
+.vc_gitem-post-meta-field-author_profile_image img, 
+.vc_gitem-post-meta-field-author_profile_image_2 img,
+.vc_gitem-post-meta-field-author_profile_image_3 img {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+}
+
+.vc_gitem-post-meta-field-author_profile_image,
+.vc_gitem-post-meta-field-author_profile_image_2,
+.vc_gitem-post-meta-field-author_profile_image_3 {
+  float: left;
+  margin-bottom: 16px;
+}
+
+.vc_gitem-post-meta-field-author_name,
+.vc_gitem-post-meta-field-author_name_2,
+.vc_gitem-post-meta-field-author_name_3 {
+  float: left;
+  padding: 10px 0px 20px 12px;
+  margin-bottom: 20px;
+  font-family: "Signika", serif;
+}
+
+.vc_gitem-post-meta-field-author_name,
+.vc_gitem-post-meta-field-author_name_2 {
+  margin-right: 32px;    
+}
+
+.vc_gitem-post-meta-field-excerpt_headline {
+  clear: both;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -8px;
+}
+
+.collection-list-more {
+  margin-bottom: 15px!important;
+}
+
+.collection-list-more a {
+  font-weight: 600;
+  padding: 0px!important;
+  margin: 0px;
+  border: 0px!important;
+  font-size: 16px!important;
+}
+
+.vc_gitem-post-data-source-post_excerpt {
+  margin-bottom: -9px!important;
+}
+
+.vc_gitem-post-meta-field-amazon_link {    
+  width: auto;
+  float: left;  
+  height: 44px;
+}
+
+.vc_gitem-post-meta-field-amazon_link a {
+  font-family: "Signika", serif;
+  font-size: 24px;
+  color: #fff;
+  padding: 16px 24px;
+  height: 22px;
+  position: absolute;
+  background-color: #B11A5D;
+}
+
+.vc_gitem-post-meta-field-amazon_link:hover a {  
+  background-color: #A11856;
+}
+
+
+.eltdf-mg-item .eltdf-mg-image img {
+  -moz-transition: transform 1s!important;
+  -webkit-transition: transform 1s!important;
+  transition: transform 1s!important;
+}
+
+.eltdf-mg-item:hover .eltdf-mg-image img {
+  -moz-transform: scale(1.1)!important;
+  -webkit-transform: scale(1.1)!important;
+  transform: scale(1.1)!important;
+}
+
 
 /*
 2x2 Square Big
