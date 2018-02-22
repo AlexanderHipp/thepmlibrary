@@ -4372,14 +4372,27 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   }
 }
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1399px) { 
   h2 {
     font-size: 24px;  
     line-height: 28px;
   }  
 }
 
+@media only screen and (max-width: 1200px) {
+  .collection-hero h1 {
+    font-size: 42px!important;
+    line-height: 46px!important;       
+    width: 800px!important;         
+  } 
+}
+
 @media only screen and (max-width: 1024px) {
+  
+  .collection-hero h1 {    
+    width: 550px!important;         
+  } 
+
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 15% 0;
   }
@@ -4412,7 +4425,8 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {  
+
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 28% 0;
   }
@@ -4441,6 +4455,32 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   }
 
 }
+
+@media only screen and (max-width: 768px) {   
+  .collection-hero h1 {
+    width: 400px!important;
+    font-size: 32px!important;
+    line-height: 34px!important;
+    padding: 20px 5% 0px!important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .collection-hero h1 {       
+    width: 330px!important;
+    transform: translate(-50%, 50%)!important;
+  }
+
+  .eltdf-grid, .eltdf-container-inner, .eltdf-row-grid-section, .eltdf-slider .carousel-inner .eltdf-slider-content-outer {
+    width: 100%!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+}
+
+
 
 /* ==========================================================================
    #404 styles - end
@@ -5699,7 +5739,7 @@ body[class*='eltdf-sticky'] .eltdf-sticky-header .eltdf-search-opener .eltdf-sea
 
 .eltdf-mobile-header .eltdf-mobile-header-inner {
   position: relative;
-  height: 100px;
+  height: 60px!important;
   background-color: #fff;  
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -7208,6 +7248,10 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   padding: 66px 0 0;
 }
 
+.eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner {
+  padding-top: 0px!important;
+}
+
 .eltdf-search-page-holder {
   position: relative;
   display: inline-block;
@@ -7487,6 +7531,11 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 .eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener:hover,
 .eltdf-light-header .eltdf-top-bar .eltdf-search-opener:hover {
   color: #fff !important;
+}
+
+.home .eltdf-page-header,
+.home .eltdf-mobile-header .eltdf-mobile-header-inner {
+  background-color: #f2f2f2!important;
 }
 
 .eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener,
@@ -8029,6 +8078,12 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   }
   .gallery.eltdf-portfolio-gallery-four-columns .eltdf-portfolio-single-media:nth-child(2n+1) {
     clear: both;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .page .vc_col-sm-5 {
+    width: 100%!important;
   }
 }
 
@@ -12321,6 +12376,33 @@ button.eltdf-btn {
 
 /* Collection List */
 
+
+.collection-hero {
+  position: relative;
+}
+
+.collection-hero h1 {
+  position: absolute;
+  bottom: 0%;
+  background-color: #fff;
+  padding: 32px 10% 0px;
+  box-sizing: border-box;
+  line-height: 68px;
+  font-size: 64px;
+  width: 1000px;
+  margin: 0px auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.collection-hero .wpb_single_image .vc_single_image-wrapper {
+  overflow: hidden;
+  max-height: 500px!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .vc_gitem-post-meta-field-author_profile_image img, 
 .vc_gitem-post-meta-field-author_profile_image_2 img,
 .vc_gitem-post-meta-field-author_profile_image_3 img {
@@ -14503,7 +14585,15 @@ button.eltdf-btn {
   .eltdf-team-holder.eltdf-main-info-on-hover .eltdf-team-info-inner {
     padding: 15px 30px;
   }
+
+  .page .collection-hero.vc_column_container>.vc_column-inner {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+
 }
+
+
 
 .eltdf-team-holder.eltdf-main-info-on-hover .eltdf-team-name,
 .eltdf-team-holder.eltdf-main-info-on-hover .eltdf-team-excerpt {
