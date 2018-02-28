@@ -1073,3 +1073,24 @@ if (!function_exists('superfood_elated_max_image_width_srcset')) {
 
     add_filter('max_srcset_image_width', 'superfood_elated_max_image_width_srcset');
 }
+
+
+function get_categories_of_current_post( $atts ) {
+
+    $post_id = superfood_elated_get_page_id();    
+
+    $cats = array();
+    foreach (get_the_category($post_id) as $c) {
+        $cat = get_category($c);
+        array_push($cats, $cat->name);
+    }
+    
+    if (sizeOf($cats) > 0) {
+        $post_categories = implode(', ', $cats);
+    } else {
+        $post_categories = 'Not Assigned';
+    }
+    
+    return $post_categories;
+}
+add_shortcode( 'post_categories', 'get_categories_of_current_post');
