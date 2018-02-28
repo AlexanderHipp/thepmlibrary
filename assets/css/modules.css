@@ -4397,32 +4397,28 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     padding: 0 0 15% 0;
   }
 
-  .vc_gitem-post-meta-field-author_name:not(:empty),
-  .vc_gitem-post-meta-field-author_name_2:not(:empty),
-  .vc_gitem-post-meta-field-author_name_3:not(:empty) {    
+  .author_1_name:not(:empty),
+  .author_2_name:not(:empty),
+  .author_3_name:not(:empty) {    
     padding: 10px 0px 20px 12px;
     margin-bottom: 5px;
   }
 
-  .vc_gitem-post-meta-field-author_name:empty,
-  .vc_gitem-post-meta-field-author_name_2:empty,
-  .vc_gitem-post-meta-field-author_name_3:empty {
+  .author_1_name:empty,
+  .author_2_name:empty,
+  .author_3_name:empty {
     padding: 0px;
+    display: none;
     margin-bottom: 0px;
   }
 
-  .vc_gitem-post-meta-field-author_profile_image, 
-  .vc_gitem-post-meta-field-author_profile_image_2, 
-  .vc_gitem-post-meta-field-author_profile_image_3 {
+  .author_1_profile, 
+  .author_2_profile, 
+  .author_3_profile {
     clear: both;
     margin: 0px!important;  
   }
-  
-  .vc_gitem-post-meta-field-author_name:empty,
-  .vc_gitem-post-meta-field-author_name_2:empty,
-  .vc_gitem-post-meta-field-author_name_3:empty {
-    display: none;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {  
@@ -12403,32 +12399,32 @@ button.eltdf-btn {
   background-position: 50% 50%;
 }
 
-.vc_gitem-post-meta-field-author_profile_image img, 
-.vc_gitem-post-meta-field-author_profile_image_2 img,
-.vc_gitem-post-meta-field-author_profile_image_3 img {
+.author_1_profile img, 
+.author_2_profile img,
+.author_3_profile img {
   height: 47px;
   width: 47px;
   border-radius: 50%;
 }
 
-.vc_gitem-post-meta-field-author_profile_image,
-.vc_gitem-post-meta-field-author_profile_image_2,
-.vc_gitem-post-meta-field-author_profile_image_3 {
+.author_1_profile, 
+.author_2_profile,
+.author_3_profile  {
   float: left;
   margin-bottom: 16px;
 }
 
-.vc_gitem-post-meta-field-author_name,
-.vc_gitem-post-meta-field-author_name_2,
-.vc_gitem-post-meta-field-author_name_3 {
+.author_1_name,
+.author_2_name,
+.author_3_name {
   float: left;
   padding: 10px 0px 20px 12px;
   margin-bottom: 20px;
   font-family: "Signika", serif;
 }
 
-.vc_gitem-post-meta-field-author_name,
-.vc_gitem-post-meta-field-author_name_2 {
+.author_1_name,
+.author_2_name {
   margin-right: 32px;    
 }
 
