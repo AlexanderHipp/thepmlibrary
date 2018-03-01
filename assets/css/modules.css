@@ -4423,6 +4423,38 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     margin: 0px!important;  
   }
 
+  footer .widget.widget_nav_menu ul#menu-footer li,
+  footer #custom_html-2 {
+    float:none!important;
+    margin-bottom: 12px;
+  }
+
+  footer #nav_menu-2 {
+    margin-bottom: 0px;
+  }
+
+  footer .eltdf-footer-top .eltdf-social-icon-widget-holder {
+    margin-top: 6px!important;
+  }
+
+  footer .eltdf-icon-widget-holder, 
+  footer .eltdf-social-icon-widget-holder {
+    float: none!important;
+    clear: left!important;
+    margin-left: 0px!important;
+    margin-right: 36px;
+  }
+
+  footer .eltdf-footer-top #text-10 {
+    padding-top: 36px;
+  }
+
+  footer #custom_html-2 {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {  
@@ -4451,9 +4483,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     bottom: 55px!important;
   }
 
-}
-
-@media only screen and (max-width: 768px) {   
   .collection-hero h1 {
     width: 400px!important;  
     padding: 20px 5% 0px!important;
@@ -12514,6 +12543,74 @@ button.eltdf-btn {
   transform: scale(1.1)!important;
 }
 
+
+
+/**
+
+Footer
+
+**/
+
+
+footer .eltdf-four-columns .eltdf-column {
+  width: 100%;
+}
+
+footer .eltdf-footer-top-holder {
+  background-color: #222222;
+  color: #fff;
+}
+
+footer .eltdf-footer-top .widget .eltdf-footer-widget-title {
+  font-size: 30px!important;
+  margin-bottom: 72px!important;
+}
+
+footer .eltdf-footer-top:not(.eltdf-footer-top-full) .eltdf-container-inner {
+  padding: 120px 0px 60px;
+}
+
+footer .eltdf-footer-top .widget a  {
+  color: #fff!important;
+  font-size: 24px!important;
+  font-family: "Signika", serif!important;
+  font-weight: 300!important;
+}
+
+footer .eltdf-footer-top .widget a:hover {
+  color: #B11A5D!important;
+}
+
+footer .widget.widget_nav_menu ul li {
+  float: left!important;
+  margin: 0 100px 0 0;
+}
+
+footer #custom_html-2 {
+  padding: 4px 0px;
+  float: left;
+}
+
+footer .eltdf-icon-widget-holder,
+footer .eltdf-social-icon-widget-holder {
+  float: right;
+  height: 36px;
+  margin-left: 42px;
+}
+
+footer .eltdf-icon-widget-holder:hover .eltdf-icon-holder,
+footer .eltdf-social-icon-widget-holder:hover {
+  color: #B11A5D!important;  
+  -webkit-transition: unset!important;
+  -moz-transition: unset!important;
+  transition: unset!important;
+}
+
+
+footer .eltdf-footer-top #text-10 { 
+  clear: both;
+  padding-top: 72px;
+}
 
 /*
 2x2 Square Big
