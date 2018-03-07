@@ -41,3 +41,5 @@
             <?php superfood_elated_get_full_screen_menu(); ?>
             <div class="eltdf-content" <?php superfood_elated_content_elem_style_attr(); ?>>
                 <div class="eltdf-content-inner">
+                    
+                    <?php do_action('back_button'); ?>

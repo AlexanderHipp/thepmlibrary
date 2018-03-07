@@ -1094,3 +1094,15 @@ function get_categories_of_current_post( $atts ) {
     return $post_categories;
 }
 add_shortcode( 'post_categories', 'get_categories_of_current_post');
+
+
+add_action( 'back_button', 'wpse221640_back_button' );
+function wpse221640_back_button()
+{
+    if ( wp_get_referer() )
+    {        
+        $button    = "\n<div class='back-button-inner'><a id='my-back-button' class='btn button thepmlibrary-back-button' onclick='javascript:history.back()'>Back</a></div>";
+        echo ( $button );
+    }
+}
+

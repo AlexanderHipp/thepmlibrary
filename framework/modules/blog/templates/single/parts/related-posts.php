@@ -2,7 +2,7 @@
 	<div class="eltdf-related-posts-holder-inner">
 		<?php if ( $related_posts && $related_posts->have_posts() ) : ?>
 			<div class="eltdf-related-posts-title">
-				<h4><?php esc_html_e('Related Posts', 'superfood' ); ?></h4>
+				<h4><?php esc_html_e('Further inspiration', 'superfood' ); ?></h4>
 			</div>
 			<div class="eltdf-related-posts-inner clearfix">
 				<?php while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
@@ -20,12 +20,12 @@
 								<?php }	?>
 							</div>
 							<h4><a itemprop="name" class="entry-title eltdf-post-title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-							<div class="eltdf-post-info">
-								<?php superfood_elated_post_info(array(
-									'author' => 'yes',
-									'date' => 'yes'
-								)) ?>
-							</div>
+							<!-- <div class="eltdf-post-info">
+								<?php //superfood_elated_post_info(array(
+									//'author' => 'yes',
+									//'date' => 'yes'
+							//	)) ?>
+							</div> -->
 						</div>
 					</div>
 				<?php endwhile; ?>
