@@ -7622,31 +7622,18 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   .back-button-inner {
     width: 1100px;
   } 
-
-  .reviewer_name,
-  .reviewer_social_name {
-    margin-left: 40%!important;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
   .back-button-inner {
     width: 950px;
   } 
-  .reviewer_name,
-  .reviewer_social_name {
-    margin-left: 38%!important;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
   .back-button-inner {
     width: 768px;
   } 
-  .reviewer_name,
-  .reviewer_social_name {
-    margin-left: 36%!important;
-  }
 
   .review_text {
     font-size: 18px!important;
@@ -7655,33 +7642,29 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   }
 
   .reviewer_image {      
-    height: 112px!important;
+    height: 96px!important;
   }
 
   .reviewer_name {    
-    font-size: 20px!important;
-    margin-top: -80px!important;
+    font-size: 20px!important;   
+    padding-top: 24px!important; 
   }
 
-  .reviewer_social_name {    
-    margin-top: -56px!important;    
+  .reviewer_social_name {        
     font-size: 14px!important;
+    padding-bottom: 24px!important;
   }
 
-  .reapeater-row {   
-    margin-bottom: 42px!important;
+  .reviewer_details .repeater-child-wrapper {   
+    transform: translate(-50%, -40%)!important;
   }
+
 }
 
 @media only screen and (max-width: 800px) {
   .back-button-inner {
     width: 650px;
   } 
-
-  .reviewer_name,
-  .reviewer_social_name {
-    margin-left: 33%!important;
-  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -7689,21 +7672,25 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
     width: 420px;
   } 
 
-  .reviewer_image {    
-    width: 360px!important;
+  .review_text {
+    padding: 24px 24px 64px 24px!important;
+  }
+
+  .reviewer_details .repeater-child-wrapper {
+    width: 380px!important;
+  }
+
+  .reviewer_image img {    
+    left: 48px!important;
+  }
+
+  .reviewer_image {
+    width: 90px!important;
   }
 
   .reviewer_name,
   .reviewer_social_name {
-    margin-left: 31%!important;
-  }
-
-  .review_text {
-    padding: 24px 24px 48px 24px!important;
-  }
-
-  .reapeater-row {
-    margin-bottom: 24px!important;
+    width: 290px!important;
   }
 }
 
@@ -7719,19 +7706,6 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
     padding-right: 15px!important;
   }
 
-  .reviewer_name,
-  .reviewer_social_name {
-    margin-left: 29%!important;
-  }
-
-  .reviewer_image {
-    width: 300px!important;
-    margin-top: -10%!important;
-  }
-
-  .reviewer_image img {
-    left: 42px!important;
-  }
 }
 
 .eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener,
@@ -12600,13 +12574,34 @@ button.eltdf-btn {
 .book-reviews .reapeter-column {
   border: none;
   display: block;
+  position: relative;
 }
 
-.reapeater-row {  
-  display: block;  
-  margin-bottom: 64px;
+.book-reviews .reapeter-column.reviewer_details {
+  border: none;
+  display: block;
+  width: 100%;
   position: relative;
-  overflow: initial;
+  margin-bottom: 96px;
+}
+
+.reviewer_details .repeater-child-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 420px;
+  background: #fff;
+  margin: 0 auto;
+  left: 50%;
+  top: -50%;
+}
+
+.reviewer_details .reapeater-row {  
+  display: block;    
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
 }
 
 .review_text {
@@ -12618,14 +12613,10 @@ button.eltdf-btn {
   background-color: #F2F2F2;
 }
 
-.reviewer_image {
-  background: #fff;
-  width: 424px;
+.reviewer_image {  
+  width: 100px;
   height: 124px;
-  margin-top: -5%;
-  z-index: 1;
-  margin-left: 50%;
-  transform: translate(-50%, 0%);
+  float: left;  
 }
 
 .reviewer_image img {    
@@ -12636,23 +12627,18 @@ button.eltdf-btn {
   transform: translate(-50%, -50%);
 }
 
-.reviewer_name {  
-  transform: translate(0%, 0%);
-  width: 284px;
+.reviewer_name {    
+  width: 320px;
   font-size: 24px;
-  margin-top: -86px;
-  margin-left: 42%;
-  z-index: 2;
+  padding-top: 36px;
   font-family: "Signika", serif;
-  float: left;
-  clear: both;
+  float: left;  
 }
 
-.reviewer_social_name {
-  margin-left: 42%;
+.reviewer_social_name {  
   float: left;
-  transform: translate(0px, 0px);
-  margin-top: -58px;
+  width: 320px;
+  padding-bottom: 36px;
   font-family: "Signika", serif;
 }
 
