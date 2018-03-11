@@ -4496,10 +4496,13 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     padding: 20px 5% 0px!important;
   }
 
-  .collection-hero h1,
-  .book-detail-page h1 {    
+  .collection-hero h1 {
     font-size: 32px!important;
     line-height: 34px!important;    
+  }
+
+  .book-detail-page {
+    padding: 0px;
   }
 }
 
@@ -7610,102 +7613,6 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   display: block;
   margin: 0 auto;    
   width: 1300px;
-}
-
-@media only screen and (min-width: 1400px) {
-  .back-button-inner {
-    width: 1300px;
-  }   
-}
-
-@media only screen and (max-width: 1399px) {
-  .back-button-inner {
-    width: 1100px;
-  } 
-}
-
-@media only screen and (max-width: 1200px) {
-  .back-button-inner {
-    width: 950px;
-  } 
-}
-
-@media only screen and (max-width: 1024px) {
-  .back-button-inner {
-    width: 768px;
-  } 
-
-  .review_text {
-    font-size: 18px!important;
-    line-height: 24px!important;    
-    padding: 24px 24px 64px 24px!important;
-  }
-
-  .reviewer_image {      
-    height: 96px!important;
-  }
-
-  .reviewer_name {    
-    font-size: 20px!important;   
-    padding-top: 24px!important; 
-  }
-
-  .reviewer_social_name {        
-    font-size: 14px!important;
-    padding-bottom: 24px!important;
-  }
-
-  .reviewer_details .repeater-child-wrapper {   
-    transform: translate(-50%, -40%)!important;
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-  .back-button-inner {
-    width: 650px;
-  } 
-}
-
-@media only screen and (max-width: 680px) {
-  .back-button-inner {
-    width: 420px;
-  } 
-
-  .review_text {
-    padding: 24px 24px 64px 24px!important;
-  }
-
-  .reviewer_details .repeater-child-wrapper {
-    width: 380px!important;
-  }
-
-  .reviewer_image img {    
-    left: 48px!important;
-  }
-
-  .reviewer_image {
-    width: 90px!important;
-  }
-
-  .reviewer_name,
-  .reviewer_social_name {
-    width: 290px!important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .back-button-inner {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-  } 
-
-  .eltdf-related-posts-holder {
-    padding-left: 15px!important;
-    padding-right: 15px!important;
-  }
-
 }
 
 .eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener,
@@ -12571,11 +12478,50 @@ button.eltdf-btn {
   padding: 64px 64px 32px 0px;
 }
 
-.book-reviews .reapeter-column {
+
+
+.backpage-images .reapeater-row {
+  width: 50%;
+  float: left;
+}
+
+.backpage-images .reapeater-row:only-child {
+  width: 100%;  
+}
+
+.backpage-images .reapeater-row:only-child .backpage_image_item {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.backpage-images .reapeater-row img {
+  width:100%;
+  height: auto;
+  padding: 0px 12px;
+  box-sizing: border-box;
+}
+
+.whats-inside {
+  margin-top: 120px;
+}
+
+.whats-inside .post_categories div {
+  margin-bottom: 24px;
+}
+
+.reapeter-column {
   border: none;
   display: block;
   position: relative;
 }
+
+.whats_inside_item {
+  display: list-item!important;
+  margin-left: 1.3em;
+  list-style-type: disc; 
+  margin-bottom: 12px;
+}
+  
 
 .book-reviews .reapeter-column.reviewer_details {
   border: none;
@@ -12604,13 +12550,30 @@ button.eltdf-btn {
   width: 100%;
 }
 
-.review_text {
-  font-size: 24px;
-  line-height: 30px;
+.review_text {  
   text-align: center;
-  padding: 48px 48px 96px 48px;
-  font-family: "Signika", serif;
+  padding: 48px 48px 96px 48px;  
   background-color: #F2F2F2;
+}
+
+.book-details {
+  margin-bottom: 36px;  
+}
+
+.book-inside {
+  margin-bottom: 24px;  
+}
+
+.book-details,
+.review_text,
+.book-inside,
+.whats-inside .post_categories div,
+.excerpt_headline,
+.excerpt_body,
+.author_name
+ {
+  font-size: 24px!important;
+  line-height: 30px!important;  
 }
 
 .reviewer_image {  
@@ -12642,6 +12605,14 @@ button.eltdf-btn {
   font-family: "Signika", serif;
 }
 
+.reviewer_social_name a {
+  color: #B11A5D;
+}
+
+.reviewer_social_name a:hover {
+  color: #A11856;
+}
+
 .collection-hero .wpb_single_image .vc_single_image-wrapper {
   overflow: hidden;
   max-height: 500px!important;
@@ -12650,9 +12621,18 @@ button.eltdf-btn {
   background-position: 50% 50%;
 }
 
-.author_1_profile img, 
-.author_2_profile img,
-.author_3_profile img,
+.authors .reapeater-row {
+  float: left;
+  width: auto;
+}
+
+.authors .reapeater-row:not(:last-child) {
+  margin-right: 32px;    
+}
+
+.author_image img, 
+.author_image img,
+.author_image img,
 .book-reviews .reviewer_image img {
   height: 47px;
   width: 47px;
@@ -12660,26 +12640,20 @@ button.eltdf-btn {
   max-width: none;
 }
 
-.author_1_profile, 
-.author_2_profile,
-.author_3_profile  {
+.author_image, 
+.author_image,
+.author_image  {
   float: left;
   margin-bottom: 16px;
 }
 
-.author_1_name,
-.author_2_name,
-.author_3_name {
+.author_name {
   float: left;
   padding: 10px 0px 20px 12px;
   margin-bottom: 20px;
   font-family: "Signika", serif;
 }
 
-.author_1_name,
-.author_2_name {
-  margin-right: 32px;    
-}
 
 .excerpt_headline {
   clear: both;
@@ -12721,9 +12695,12 @@ button.eltdf-btn {
   font-size: 15px!important;  
 }
 
-.excerpt_body {  
-  line-height: 24px;
+.excerpt_body {    
   margin-bottom: 15px!important;
+}
+
+.book-detail-page .excerpt_body {    
+  margin-bottom: 65px!important;
 }
 
 .amazon_link_cta {
@@ -14922,7 +14899,7 @@ footer .eltdf-footer-top #text-10 {
 }
 
 .eltdf-team-holder.eltdf-main-info-on-hover .eltdf-team-social-holder a:hover {
-  color: #B11A5D;
+  color: #A11856;
 }
 
 .eltdf-team-holder.eltdf-main-info-on-hover.eltdf-indented-overlay .eltdf-team-info {
@@ -14946,7 +14923,7 @@ footer .eltdf-footer-top #text-10 {
 }
 
 .eltdf-team-holder.eltdf-main-info-on-hover.eltdf-light-skin .eltdf-team-social-holder a:hover {
-  color: #B11A5D;
+  color: #A11856;
 }
 
 .eltdf-team-holder.eltdf-main-info-on-hover.eltdf-dark-skin .eltdf-team-info {
@@ -15535,7 +15512,7 @@ footer .eltdf-footer-top .eltdf-icon-widget-holder .eltdf-icon-holder {
 }
 
 footer .eltdf-footer-top .eltdf-icon-widget-holdera:hover .eltdf-icon-text-holder {
-  color: #B11A5D;
+  color: #A11856;
 }
 
 .eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-icon-widget-holder {
@@ -16473,6 +16450,126 @@ footer .eltdf-footer-bottom-holder .widget {
 .widget.widget_eltdf_twitter_widget .eltdf-twitter-widget.eltdf-twitter-slider .owl-dots .owl-dot:hover span, .widget.widget_eltdf_twitter_widget .eltdf-twitter-widget.eltdf-twitter-slider .owl-dots .owl-dot.active span {
   background-color: #3a3a3a;
 }
+
+
+
+@media only screen and (min-width: 1400px) {
+  .back-button-inner {
+    width: 1300px;
+  }   
+}
+
+@media only screen and (max-width: 1399px) {
+  .back-button-inner {
+    width: 1100px;
+  } 
+}
+
+@media only screen and (max-width: 1200px) {
+  .back-button-inner {
+    width: 950px;
+  } 
+
+  .book-details,
+  .review_text,
+  .book-inside,
+  .whats-inside .post_categories div,
+  .excerpt_headline,
+  .excerpt_body,
+  .author_1_name, 
+  .author_2_name, 
+  .author_3_name {
+    font-size: 18px!important;
+    line-height: 24px!important; 
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .back-button-inner {
+    width: 768px;
+  } 
+
+  .review_text {    
+    padding: 24px 24px 64px 24px!important;
+  }
+
+  .reviewer_image {      
+    height: 96px!important;
+  }
+
+  .reviewer_name {    
+    font-size: 20px!important;   
+    padding-top: 24px!important; 
+  }
+
+  .reviewer_social_name {        
+    font-size: 14px!important;
+    padding-bottom: 24px!important;
+  }
+
+  .reviewer_details .repeater-child-wrapper {   
+    transform: translate(-50%, -40%)!important;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .back-button-inner {
+    width: 650px;
+  } 
+}
+
+@media only screen and (max-width: 680px) {
+  .back-button-inner {
+    width: 420px;
+  } 
+
+  .review_text {
+    padding: 24px 24px 64px 24px!important;
+  }
+
+  .reviewer_details .repeater-child-wrapper {
+    width: 380px!important;
+  }
+
+  .reviewer_image img {    
+    left: 48px!important;
+  }
+
+  .reviewer_image {
+    width: 90px!important;
+  }
+
+  .reviewer_name,
+  .reviewer_social_name {
+    width: 275px!important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .back-button-inner {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  } 
+
+  .eltdf-related-posts-holder {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+  }
+
+  .reviewer_details .repeater-child-wrapper {
+    width: 320px!important;
+  }
+
+  .reviewer_name,
+  .reviewer_social_name {
+    width: 215px!important;
+  }
+
+}
+
+
 
 /* ==========================================================================
    Twitter widget style - end
