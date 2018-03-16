@@ -119,7 +119,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
@@ -129,17 +129,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 78px;
+h1,
+.book-title {
+  font-size: 64px;
   font-weight: 600;
-  line-height: 100px;
+  font-family: "Signika", serif;
+  line-height: 76px;
+  color: #222;
+  text-transform: none;
+  text-align: center;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 36px!important;
   font-weight: 600;
-  line-height: 40px;  
+  font-family: "Signika", serif;
+  line-height: 42px!important;  
+  text-transform: uppercase;  
+  padding-bottom: 8px; 
 }
+
+h2:hover {
+  color: #b11a5d;
+}
+
 
 h3 {
   font-size: 24px;
@@ -165,17 +178,19 @@ h6 {
   line-height: 16px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4,
+.book-title {
   color: #222;
   font-family: "Signika", serif;
 }
 
 h5, h6 {
   color: #222;
-  font-family: "Open Sans", sans-serif!important;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3,
+.book-title {
   margin: 25px 0;
 }
 
@@ -3869,8 +3884,7 @@ ul.wpb_thumbnails-fluid > li,
 .eltdf-comment-holder .eltdf-comment-text .comment-reply-link,
 .eltdf-comment-holder .eltdf-comment-text .comment-edit-link {
   float: right;
-  margin-left: 10px;
-  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;  
   font-weight: 400;
   font-size: 12px;
   color: #B11A5D;
@@ -4393,7 +4407,8 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   } 
   
   .collection-hero h1,
-  .book-detail-page h1 {
+  .book-detail-page h1,
+  .book-title {
     font-size: 42px!important;
     line-height: 46px!important;               
   } 
@@ -4494,9 +4509,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   .collection-hero h1 {
     width: 400px!important;  
     padding: 20px 5% 0px!important;
-  }
-
-  .collection-hero h1 {
     font-size: 32px!important;
     line-height: 34px!important;    
   }
@@ -8633,8 +8645,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 .eltdf-blog-holder article.format-link .eltdf-link-content .eltdf-link-text .eltdf-link-url {
   position: relative;
   display: inline-block;
-  margin: 7px 0 0;
-  font-family: "Open Sans", sans-serif;
+  margin: 7px 0 0;  
   font-weight: 400;
   font-size: 15px;
   color: #ffffff;
@@ -8884,8 +8895,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   font-size: 22px;
 }
 
-.eltdf-blog-holder.eltdf-blog-type-masonry article.format-link .eltdf-link-content .eltdf-link-text .eltdf-link-url {
-  font-family: "Open Sans", sans-serif;
+.eltdf-blog-holder.eltdf-blog-type-masonry article.format-link .eltdf-link-content .eltdf-link-text .eltdf-link-url {  
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -9061,7 +9071,6 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   display: inline-block;
   vertical-align: top;
   margin: 0 0 0 3px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -9088,7 +9097,6 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 
 .eltdf-social-share-tags-holder .eltdf-blog-single-share .eltdf-social-share-holder .eltdf-social-title {
   margin: 0 6px 0 0;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 13px;
   color: #9c9c9c;
@@ -9388,8 +9396,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 }
 
 .eltdf-blog-single-navigation .eltdf-blog-single-prev .eltdf-blog-single-nav-label,
-.eltdf-blog-single-navigation .eltdf-blog-single-next .eltdf-blog-single-nav-label {
-  font-family: "Open Sans", sans-serif;
+.eltdf-blog-single-navigation .eltdf-blog-single-next .eltdf-blog-single-nav-label {  
   font-weight: 700;
   font-size: 13px;
   color: #9c9c9c;
@@ -9782,8 +9789,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
   display: inline-block;
   vertical-align: top;
   float: left;
-  padding: 0 13px 0 0;
-  font-family: "Signika", serif;
+  padding: 0 13px 0 0;  
   font-weight: 400;
   font-size: 12px;
   color: inherit;
@@ -9862,8 +9868,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 .eltdf-blog-list-holder .eltdf-single-tags-holder .eltdf-tags a {
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 0 3px;
-  font-family: "Signika", serif;
+  margin: 0 0 0 3px;  
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -9888,8 +9893,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 
 .eltdf-blog-list-holder .eltdf-bli-read-more-holder .eltdf-btn {
   position: relative;
-  font-size: 13px;
-  font-family: "Signika", serif;
+  font-size: 13px;  
   font-weight: 600;
   color: #808285;
   text-transform: uppercase;
@@ -11005,8 +11009,7 @@ button.eltdf-btn {
 /* ==========================================================================
    Countdown shortcode style - begin
    ========================================================================== */
-.eltdf-countdown {
-  font-family: "Signika", serif;
+.eltdf-countdown {  
   position: relative;
   display: inline-block;
   width: 100%;
@@ -11111,8 +11114,7 @@ button.eltdf-btn {
   height: 1em;
   display: inline-block !important;
   vertical-align: middle;
-  color: #3a3a3a;
-  font-family: "Signika", serif;
+  color: #3a3a3a;  
   font-size: 44px;
   line-height: 1em;
   font-weight: 600;
@@ -12462,20 +12464,21 @@ button.eltdf-btn {
   padding: 32px 10% 0px;
   box-sizing: border-box;
   width: 1000px;
-  margin: 0px auto;
+  margin: -1% auto;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .collection-hero h1,
-.book-detail-page h1 {   
+.book-detail-page h1,
+.book-title {   
   line-height: 68px;
   font-size: 64px;
 }
 
 .book-detail-page {
   background-color: #F2F2F2;
-  padding: 64px 64px 32px 0px;
+  padding: 64px 0px;
 }
 
 
@@ -12497,12 +12500,17 @@ button.eltdf-btn {
 .backpage-images .reapeater-row img {
   width:100%;
   height: auto;
-  padding: 0px 12px;
+  margin: 0px 12px;
   box-sizing: border-box;
+  box-shadow: 0 2px 13px #898989;
 }
 
-.whats-inside {
-  margin-top: 120px;
+.whats-inside,
+.book-details-wrapper,
+.reviews-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: solid 1px #f4f4f4;
 }
 
 .whats-inside .post_categories div {
@@ -12576,6 +12584,15 @@ button.eltdf-btn {
   line-height: 30px!important;  
 }
 
+.author-list-collection {
+  font-size: 16px;
+  font-weight: 400;  
+  line-height: 20px;
+  color: #222;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
 .reviewer_image {  
   width: 100px;
   height: 124px;
@@ -12593,7 +12610,7 @@ button.eltdf-btn {
 .reviewer_name {    
   width: 320px;
   font-size: 24px;
-  padding-top: 36px;
+  padding-top: 40px;
   font-family: "Signika", serif;
   float: left;  
 }
@@ -12601,8 +12618,7 @@ button.eltdf-btn {
 .reviewer_social_name {  
   float: left;
   width: 320px;
-  padding-bottom: 36px;
-  font-family: "Signika", serif;
+  padding-bottom: 36px;  
 }
 
 .reviewer_social_name a {
@@ -12634,8 +12650,8 @@ button.eltdf-btn {
 .author_image img,
 .author_image img,
 .book-reviews .reviewer_image img {
-  height: 47px;
-  width: 47px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   max-width: none;
 }
@@ -12657,9 +12673,13 @@ button.eltdf-btn {
 
 .excerpt_headline {
   clear: both;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;  
+  font-size: 16px!important;
+  font-weight: 600;  
+  line-height: 20px!important;
+  color: #222;
+  text-transform: uppercase;
+  text-align: left;    
+  padding-bottom: 4px;
 }
 
 .collection-list-item {
@@ -12683,20 +12703,30 @@ button.eltdf-btn {
 
 .collection-h2-title {
   padding-top: 8px;
+  margin-bottom: 0px!important;
 }
 
 .post_categories {
   text-align: left!important;  
-  margin-bottom: 15px!important;
+  margin-bottom: 24px!important;
 }
 
 .post_categories div span,
 .post_categories div {  
-  font-size: 15px!important;  
+  font-size: 16px;
+  font-weight: 400;  
+  line-height: 20px;
+  color: #222;
+  text-align: left; 
 }
 
 .excerpt_body {    
-  margin-bottom: 15px!important;
+  font-size: 16px!important;
+  font-weight: 400;
+  line-height: 20px!important;
+  color: #222;
+  text-align: left;
+  padding-bottom: 16px;
 }
 
 .book-detail-page .excerpt_body {    
@@ -12707,11 +12737,12 @@ button.eltdf-btn {
   display: flex;
 }
 
-.amazon_link_cta a {
-  font-family: "Signika", serif!important;
-  font-size: 24px!important;
+.amazon_link_cta a {  
+  font-size: 20px!important;
   color: #fff!important;
-  padding: 16px 24px!important;  
+  line-height: 24px;
+  font-weight: 400;
+  padding: 14px 18px!important;
   background-color: #B11A5D!important;
   border: none!important;
   border-radius: 0px!important;
@@ -12764,8 +12795,7 @@ footer .eltdf-footer-top:not(.eltdf-footer-top-full) .eltdf-container-inner {
 
 footer .eltdf-footer-top .widget a  {
   color: #fff!important;
-  font-size: 24px!important;
-  font-family: "Signika", serif!important;
+  font-size: 24px!important;  
   font-weight: 300!important;
 }
 
@@ -13024,8 +13054,7 @@ footer .eltdf-footer-top #text-10 {
   color: #3a3a3a;
   font-size: 44px;
   line-height: inherit;
-  font-weight: 700;
-  font-family: "Signika", serif;
+  font-weight: 700;  
 }
 
 .eltdf-pie-chart-holder .eltdf-pc-percentage .eltdf-pc-percent:after {
@@ -13155,7 +13184,6 @@ footer .eltdf-footer-top #text-10 {
   vertical-align: middle;
   padding: 0 6px 0 0;
   margin: 0 3px 0 0;
-  font-family: "Signika", serif;
   font-size: 12px;
   font-weight: 400;
   line-height: inherit;
@@ -13676,8 +13704,7 @@ footer .eltdf-footer-top #text-10 {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  color: #3a3a3a;
-  font-family: "Signika", serif;
+  color: #3a3a3a;  
   font-size: 17px;
   line-height: 22px;
   font-weight: 700;
@@ -14158,8 +14185,7 @@ footer .eltdf-footer-top #text-10 {
   color: #3a3a3a;
   font-size: 30px;
   line-height: 1.3em;
-  font-weight: 700;
-  font-family: "Signika", serif;
+  font-weight: 700;  
   padding: 4px 0;
 }
 
@@ -14196,7 +14222,6 @@ footer .eltdf-footer-top #text-10 {
   line-height: 1em;
   font-weight: 700;
   color: #B11A5D;
-  font-family: "Signika", serif;
 }
 
 .eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-mark {
@@ -14260,7 +14285,6 @@ footer .eltdf-footer-top #text-10 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Signika", serif;
 }
 
 .eltdf-progress-bar .eltdf-pb-percent {
@@ -14386,7 +14410,6 @@ footer .eltdf-footer-top #text-10 {
   color: #333333;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Signika", serif;
 }
 
 .eltdf-restaurant-menu .eltdf-rstrnt-price-holder .eltdf-rstrnt-price > span {
@@ -14738,7 +14761,6 @@ footer .eltdf-footer-top #text-10 {
   font-weight: 700;
   background-color: transparent;
   border: 1px solid #e1e1e1;
-  font-family: "Signika", serif;
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15124,7 +15146,6 @@ footer .eltdf-footer-top #text-10 {
   line-height: 21px;
   font-weight: 700;
   color: #3a3a3a;
-  font-family: "Signika", serif;
 }
 
 .eltdf-testimonials-holder.eltdf-testimonials-standard .eltdf-testimonial-position {
@@ -15677,8 +15698,7 @@ aside.eltdf-sidebar .widget:last-child {
   display: inline-block;
   vertical-align: top;
   float: left;
-  height: 52px;
-  font-family: "Signika", serif;
+  height: 52px;  
   font-weight: 400;
   font-size: 12px;
   line-height: 52px;
@@ -15781,7 +15801,6 @@ aside.eltdf-sidebar .widget:last-child {
 
 .widget.widget_recent_entries ul li > span {
   display: block;
-  font-family: "Signika", serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -15836,7 +15855,6 @@ aside.eltdf-sidebar .widget:last-child {
   display: inline-block;
   vertical-align: middle;
   color: #808285;
-  font-family: "Signika", serif;
   font-weight: 400;
   font-size: 12px !important;
   background-color: transparent;
@@ -16352,7 +16370,6 @@ footer .eltdf-footer-bottom-holder .widget {
 
 .widget.widget_eltdf_twitter_widget .eltdf-twitter-widget.eltdf-twitter-slider li .eltdf-tweet-text a.eltdf-tweet-time {
   margin: 21px 0 0;
-  font-family: "Signika", serif;
   font-weight: 400;
   font-size: inherit;
 }
@@ -16509,6 +16526,10 @@ footer .eltdf-footer-bottom-holder .widget {
 
   .reviewer_details .repeater-child-wrapper {   
     transform: translate(-50%, -40%)!important;
+  }
+
+  .collection-hero .wpb_single_image .vc_single_image-wrapper {    
+    max-height: 320px!important;    
   }
 
 }
