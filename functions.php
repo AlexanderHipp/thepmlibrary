@@ -1096,6 +1096,23 @@ function get_categories_of_current_post( $atts ) {
 add_shortcode( 'post_categories', 'get_categories_of_current_post');
 
 
+
+function get_the_tags_of_current_post( $atts ) {
+    
+    $id = superfood_elated_get_page_id();    
+
+    $before = '<ul><li>';
+    $sep = '</li><li>';
+    $after = '</li></ul>';
+
+    return apply_filters( 'the_tags', get_the_term_list( $id, 'post_tag', $before, $sep, $after ), $before, $sep, $after, $id );
+
+}
+add_shortcode( 'sc_post_tags', 'get_the_tags_of_current_post');
+
+
+
+
 add_action( 'back_button', 'wpse221640_back_button' );
 function wpse221640_back_button()
 {
@@ -1106,3 +1123,7 @@ function wpse221640_back_button()
     }
 }
 
+add_shortcode( 'vc_post_id', 'vc_post_id_render' );
+function vc_post_id_render() {
+   return '<h2>{{ post_data:post_author }}</h2>'; // usage of template variable post_data with argument "ID" 
+}

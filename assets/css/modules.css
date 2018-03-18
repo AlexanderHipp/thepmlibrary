@@ -12593,6 +12593,10 @@ button.eltdf-btn {
   padding-bottom: 24px;
 }
 
+.author-list-collection:before {
+  content: "by ";
+}
+
 .reviewer_image {  
   width: 100px;
   height: 124px;
