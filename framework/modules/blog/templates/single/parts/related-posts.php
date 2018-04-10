@@ -2,7 +2,7 @@
 	<div class="eltdf-related-posts-holder-inner">
 		<?php if ( $related_posts && $related_posts->have_posts() ) : ?>
 			<div class="eltdf-related-posts-title">
-				<h4><?php esc_html_e('Further inspiration', 'superfood' ); ?></h4>
+				<h2><?php esc_html_e('Further inspiration', 'superfood' ); ?></h2>
 			</div>
 			<div class="eltdf-related-posts-inner clearfix">
 				<?php while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
