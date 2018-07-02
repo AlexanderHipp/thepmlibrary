@@ -1106,22 +1106,9 @@ function get_the_tags_of_current_post( $atts ) {
     $after = '</li></ul>';
 
     return apply_filters( 'the_tags', get_the_term_list( $id, 'post_tag', $before, $sep, $after ), $before, $sep, $after, $id );
-
 }
 add_shortcode( 'sc_post_tags', 'get_the_tags_of_current_post');
 
-
-
-
-add_action( 'back_button', 'wpse221640_back_button' );
-function wpse221640_back_button()
-{
-    if ( wp_get_referer() )
-    {        
-        $button    = "\n<div class='back-button-inner'><a id='my-back-button' class='btn button thepmlibrary-back-button' onclick='javascript:history.back()'>Back</a></div>";
-        echo ( $button );
-    }
-}
 
 add_shortcode( 'vc_post_id', 'vc_post_id_render' );
 function vc_post_id_render() {
