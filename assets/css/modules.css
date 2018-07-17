@@ -166,6 +166,7 @@ h1,
   letter-spacing: 0px!important;
 }
 
+
 .post h2,
 .eltdf-related-posts-holder h2 {
   margin-bottom: 48px!important; 
@@ -10764,6 +10765,12 @@ button.eltdf-btn {
   .eltdf-clients-boxes-holder.eltdf-cb-columns-three .eltdf-cb-item:nth-child(3n+1) {
     clear: both;
   }
+
+  .homepage-grid .eltdf-section-title-holder .eltdf-st-text {
+    width: 50%;
+    margin: 17px auto 0px;
+  }
+  
 }
 
 .eltdf-clients-boxes-holder.eltdf-cb-columns-four .eltdf-cb-item {
@@ -14059,6 +14066,9 @@ footer .eltdf-footer-top #text-10 {
   .eltdf-portfolio-slider-holder .owl-nav .owl-prev {
     left: 20px;
   }
+  .eltdf-portfolio-slider-holder .owl-nav .owl-next {
+    right: 20px;
+  }
 }
 
 .eltdf-portfolio-slider-holder .owl-nav .owl-next {
@@ -14068,12 +14078,6 @@ footer .eltdf-footer-top #text-10 {
 @media only screen and (max-width: 1200px) {
   .eltdf-portfolio-slider-holder .owl-nav .owl-next {
     right: 30px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .eltdf-portfolio-slider-holder .owl-nav .owl-next {
-    right: 20px;
   }
 }
 
