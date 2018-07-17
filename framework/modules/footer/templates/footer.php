@@ -10,9 +10,7 @@
 						superfood_elated_get_footer_bottom();
 					}
 				?>
-			</div>
-			<div id="amzn-assoc-ad-55d839b1-6ce2-4dc8-a0ca-bede3c395e9a"></div>
-        	<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=55d839b1-6ce2-4dc8-a0ca-bede3c395e9a"></script>
+			</div>			
 		</footer>
 	</div> <!-- close div.eltdf-wrapper-inner  -->
 </div> <!-- close div.eltdf-wrapper -->
