@@ -364,6 +364,15 @@ blockquote cite {
   font-weight: 400;
 }
 
+.cookie-notice {
+    padding: 9px;
+    float: right;
+}
+
+.ctcc-left-side {
+    margin-right: 20px;
+}
+
 /* Webkit */
 ::selection {
   background: #ffffff;
@@ -12570,6 +12579,8 @@ button.eltdf-btn {
   content: "| ";
   white-space: pre;
 }
+
+
 
 
 .backpage-images .reapeater-row {
