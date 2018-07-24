@@ -147,19 +147,21 @@ h1,
 
 .post h2,
 .collection-body h2 {
-  font-size: 36px!important;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif!important;
-  line-height: 42px!important;  
-  text-transform: uppercase;  
+  font-size: 24px!important;   
+  line-height: 28px!important;    
   margin-bottom: 4px!important; 
 }
 
 .home h2, 
 .newsletter-registration h2 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 28px;
 }
+
+.post .newsletter-registration h2 {  
+  margin-bottom: 0px!important;
+}
+
 
 .homepage-grid .eltdf-mg-item-inner .eltdf-mg-item-text {
   text-transform: none!important;
@@ -169,7 +171,7 @@ h1,
 
 .post h2,
 .eltdf-related-posts-holder h2 {
-  margin-bottom: 48px!important; 
+  margin-bottom: 32px!important; 
 }
 
 h2 a:hover {
@@ -177,12 +179,16 @@ h2 a:hover {
 }
 
 h3,
+.book-subtitle,
+.post_tags ul li a {
+  font-size: 20px;  
+  line-height: 24px;  
+}
+
+h3,
 .book-subtitle {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 28px;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 12px; 
+  font-weight: 400;
 }
 
 h4 {
@@ -192,15 +198,20 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 h6 {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+.eltdf-mg-item-text {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -577,12 +588,25 @@ ul.wpb_thumbnails-fluid > li,
 
 /* Mailchimp END */
 
+
+
+
+/* PAGE SIZES */
+
+.eltdf-post-content .eltdf-grid,
+.eltdf-post-content .eltdf-container-inner,
+.eltdf-post-content .eltdf-row-grid-section,
+.eltdf-post-content .eltdf-footer-top-border-holder.eltdf-in-grid,
+.eltdf-post-content .eltdf-footer-bottom-border-holder.eltdf-in-grid {
+  width: 100%!important;
+}
+
 @media only screen and (min-width: 1400px) {
   .eltdf-grid-1300 .eltdf-grid,
   .eltdf-grid-1300 .eltdf-container-inner,
   .eltdf-grid-1300 .eltdf-row-grid-section,
   .eltdf-grid-1300 .eltdf-footer-top-border-holder.eltdf-in-grid,
-  .eltdf-grid-1300 .eltdf-footer-bottom-border-holder.eltdf-in-grid{
+  .eltdf-grid-1300 .eltdf-footer-bottom-border-holder.eltdf-in-grid {
     width: 1300px;
   }
   .eltdf-grid-1300.eltdf-boxed .eltdf-footer-inner,
@@ -656,6 +680,20 @@ ul.wpb_thumbnails-fluid > li,
   }
   
 }
+
+
+
+.vc_column-inner > .wpb_wrapper {
+  width: 80%!important;
+  margin-left: 10%!important;
+}
+
+.book-header-info .vc_column-inner > .wpb_wrapper,
+.templatera_shortcode .wpb_wrapper {
+  width: 100%!important;
+  margin-left: 0%!important;
+}
+
 
 /* #General styles that are used in our theme - end
    ========================================================================== */
@@ -4413,6 +4451,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-color: #fff;
 }
 
+.book-detail-page {    
+  background-color: #F8F8F8;
+}
+
 @media only screen and (max-width: 1440px) {
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 8% 0;
@@ -4439,31 +4481,19 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
 
 
-@media only screen and (max-width: 1200px) {
-  .collection-hero h1 {        
-    width: 800px!important;         
-  } 
-  
-  .collection-hero h1,
-  .book-detail-page h1,
-  .book-title {
-    font-size: 42px!important;
-    line-height: 46px!important;               
+@media only screen and (max-width: 1200px) {  
+  .collection-hero h1 {    
+    padding: 26px 4% 0px!important;         
   } 
 
-  .home h2, 
-  .newsletter-registration h2 {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  .collection-hero h1  {
+    font-size: 36px!important;
+    line-height: 40px!important;               
+  } 
   
 }
 
 @media only screen and (max-width: 1024px) {
-  
-  .collection-hero h1 {    
-    width: 550px!important;         
-  } 
 
   .eltdf-404-page .eltdf-page-not-found {
     padding: 0 0 15% 0;
@@ -4536,13 +4566,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   .signup-box-newsletter .button {    
     margin: 0px!important;
   }
-  .amazon_link_cta {    
-    height: 56px!important;
-  }  
-  .amazon_link_cta a {    
-    font-size: 18px!important;
-    padding: 14px 20px!important;
-  }
   .vc_responsive .vc_grid-filter {
     display: block!important;
   }
@@ -4550,15 +4573,18 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     bottom: 55px!important;
   }
 
-  .collection-hero h1 {
-    width: 400px!important;  
+  .collection-hero h1 {    
     padding: 20px 5% 0px!important;
     font-size: 32px!important;
-    line-height: 34px!important;    
+    line-height: 36px!important;       
+  }
+
+  .wpb_wrapper .vc_empty_space {
+    height: 84px!important;
   }
 
   .book-detail-page {
-    padding: 0px;
+    padding: 0px;  
   }
 
   .signup-box-newsletter {
@@ -4568,6 +4594,11 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
   .signup-box-newsletter #mc_embed_signup input.email {
     text-align: center;
+  }
+
+  .vc_column-inner > .wpb_wrapper {
+    width: 100%!important;
+    margin-left: 0%!important;
   }
 
 }
@@ -7645,7 +7676,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 
 .home .eltdf-page-header,
 .home .eltdf-mobile-header .eltdf-mobile-header-inner {
-  background-color: #f2f2f2!important;
+  background-color: #F8F8F8!important;
 }
 
 .home .thepmlibrary-back-button {
@@ -9043,7 +9074,7 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 }
 
 .eltdf-blog-holder.eltdf-blog-single article .eltdf-post-text {
-  padding: 0px 0 18px;
+  padding: 32px 0 18px;
 }
 
 /* Blog Masonry Full Width Holder styles - begin
@@ -9281,7 +9312,8 @@ nav.eltdf-fullscreen-menu > ul > li.eltdf-active-item > a {
 .eltdf-related-posts-holder {
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   vertical-align: middle;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12475,7 +12507,7 @@ button.eltdf-btn {
 }
 
 .eltdf-masonry-gallery-holder .eltdf-mg-item .eltdf-mg-item-text {
-  margin: 14px 0 0;
+  margin: 14px 0 3px;
   -webkit-transition: all 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
   -moz-transition: all 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
   transition: all 0.35s cubic-bezier(0.17, 0.78, 0.38, 0.89);
@@ -12520,45 +12552,42 @@ button.eltdf-btn {
   bottom: 0%;
   background-color: #fff;
   padding: 32px 10% 0px;
-  box-sizing: border-box;
-  width: 1000px;
+  box-sizing: border-box;  
   margin: -1% auto;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .post .book-title {
-  text-align:left;
-  width:100%;
-  text-transform: uppercase;
-  margin-bottom: 4px;
+  text-align:left;    
+  margin-bottom: 12px;
+  margin-top: 24px;
 }
 
-.post .book-subtitle {
-  font-size: 36px;
-  line-height: 42px;
+.post .book-subtitle {  
   margin-bottom: 24px;
 }
 
-.collection-hero h1,
-.book-detail-page h1,
-.book-title {   
-  line-height: 68px;
-  font-size: 64px;
+.collection-hero h1 {   
+  line-height: 46px;
+  font-size: 40px;
 }
 
-.book-detail-page {
-  background-color: #F2F2F2;  
+.book-detail-page h1,
+.book-title {     
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .book-header-info {
-  padding: 64px 96px 48px 0px!important;
+  padding: 32px 32px 32px 0px!important;
 } 
 
 .pages, 
 .publisher,
 .year {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   color: #93949b;
   float: left;  
@@ -12607,9 +12636,9 @@ button.eltdf-btn {
 .whats-inside,
 .book-details-wrapper,
 .reviews-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
-  border-bottom: solid 1px #f4f4f4;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  border-bottom: solid 2px #f4f4f4;
 }
 
 .whats-inside .post_categories div {
@@ -12632,8 +12661,7 @@ button.eltdf-btn {
 
 .post_tags ul li a {
   pointer-events: none;
-  cursor: default;
-  font-size: 24px;
+  cursor: default;  
 }
 
 .reapeter-column {
@@ -12645,42 +12673,13 @@ button.eltdf-btn {
 .whats_inside_item {
   display: list-item!important;
   margin-left: 1.3em;
-  list-style-type: disc; 
-  margin-bottom: 12px;
-}
-  
-
-.book-reviews .reapeter-column.reviewer_details {
-  border: none;
-  display: block;
-  width: 100%;
-  position: relative;
-  margin-bottom: 96px;
-}
-
-.reviewer_details .repeater-child-wrapper {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  z-index: 99;
-  width: 420px;
-  background: #fff;
-  margin: 0 auto;
-  left: 50%;
-  top: -50%;
-}
-
-.reviewer_details .reapeater-row {  
-  display: block;    
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  width: 100%;
+  list-style-type: disc;   
 }
 
 .review_text {  
   text-align: center;
-  padding: 48px 48px 96px 48px;  
-  background-color: #F2F2F2;
+  padding: 32px;  
+  background-color: #F8F8F8;
 }
 
 .book-details {
@@ -12691,31 +12690,18 @@ button.eltdf-btn {
   margin-bottom: 24px;  
 }
 
-.book-details,
-.review_text,
-.book-inside,
-.whats-inside .post_categories div,
-.post .excerpt_headline,
-.post .excerpt_body
-{
-  font-size: 24px;
-  line-height: 36px;  
-}
-
 .author_name {
   font-size: 16px;
   line-height: 24px;  
   float: left;
-  padding: 10px 0px 20px 12px;
-  margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  padding: 12px 24px 12px 12px;  
 }
 
 
 .author-list-collection {
   font-size: 16px;
   font-weight: 400;  
-  line-height: 20px;
+  line-height: 22px;
   color: #222;
   text-align: left;
   padding-bottom: 24px;
@@ -12727,30 +12713,29 @@ button.eltdf-btn {
 
 .reviewer_image {  
   width: 100px;
-  height: 124px;
+  min-height: 112px;
   float: left;  
 }
 
 .reviewer_image img {    
   overflow: auto;
   position: absolute;
-  top: 50%;
+  top: 48px;
   left: 62px;
   transform: translate(-50%, -50%);
 }
 
-.reviewer_name {    
-  width: 320px;
-  font-size: 24px;
-  padding-top: 40px;
-  font-family: "Roboto", sans-serif;
-  float: left;  
+.reviewer_name {      
+  font-size: 16px;
+  padding-top: 24px;
+  line-height: 22px;  
+  font-weight: bold;
 }
 
-.reviewer_social_name {  
-  float: left;
-  width: 320px;
-  padding-bottom: 36px;  
+.reviewer_social_name {    
+  font-size: 15px;
+  line-height: 18px;
+  padding-right: 12px;
 }
 
 .reviewer_social_name a {
@@ -12763,7 +12748,7 @@ button.eltdf-btn {
 
 .collection-hero .wpb_single_image .vc_single_image-wrapper {
   overflow: hidden;
-  max-height: 500px!important;
+  max-height: 350px!important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -12774,6 +12759,16 @@ button.eltdf-btn {
   width: auto;
 }
 
+.book-header-info .reapeater-row {
+  overflow: visible;
+  display: inline-block;
+  width: auto;
+}
+
+.authors .repeater-wrapper {
+  margin: 12px
+}
+
 .authors .reapeater-row:not(:last-child) {
   margin-right: 32px;    
 }
@@ -12781,18 +12776,15 @@ button.eltdf-btn {
 .author_image img, 
 .author_image img,
 .author_image img,
-.book-reviews .reviewer_image img {
+.reviewer_image img {
   height: 48px;
   width: 48px;
   border-radius: 50%;
   max-width: none;
 }
 
-.author_image, 
-.author_image,
 .author_image  {
-  float: left;
-  margin-bottom: 16px;
+  float: left;  
 }
 
 
@@ -12800,11 +12792,14 @@ button.eltdf-btn {
   clear: both;
   font-size: 16px;
   font-weight: 600;  
-  line-height: 20px;
-  color: #222;
-  text-transform: uppercase;
+  line-height: 22px;
+  color: #222;  
   text-align: left;    
   padding-bottom: 4px;
+}
+
+.book-header-info .excerpt_headline {
+  padding-top: 8px;
 }
 
 .collection-list-item {
@@ -12848,10 +12843,8 @@ button.eltdf-btn {
 .excerpt_body {    
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
-  color: #222;
-  text-align: left;
-  padding-bottom: 16px;
+  line-height: 22px;  
+  text-align: left;  
 }
 
 .amazon_link_cta {
@@ -12861,11 +12854,11 @@ button.eltdf-btn {
 }
 
 .amazon_link_cta a {  
-  font-size: 20px!important;
+  font-size: 16px!important;
   color: #fff!important;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 400;
-  padding: 14px 18px!important;
+  padding: 16px 18px!important;
   background-color:  rgba(7, 62, 167, 1)!important;
   border: none!important;
   border-radius: 0px!important;
@@ -12873,12 +12866,11 @@ button.eltdf-btn {
 }
 
 .post .detail-main-image {
-  overflow: hidden;
+  overflow: hidden;  
 }
 
-.post .book-detail-header-image {  
-  text-align: center;
-  padding: 64px 0px;
+.post .book-detail-header-image {    
+  padding: 32px;
 }
 
 .post .book-detail-header-image img,
@@ -12898,7 +12890,7 @@ button.eltdf-btn {
 
 .collection-body .collection-image-link.vc_align_ {
   text-align: center;
-  padding: 10% 20%;
+  padding: 10% 30%;
   overflow: auto;
   background-color: #F8F8F9;
 }
@@ -12907,19 +12899,15 @@ button.eltdf-btn {
   padding: 10px 40px 10px 10px;
 }
 
-.collection-body .vc_gitem_row .vc_gitem-col:last-child {
+/* .collection-body .vc_gitem_row .vc_gitem-col:last-child {
   padding: 32px 10px 10px 10px;
-}
+} */
 
 .collection-body .wpb_single_image img {
   max-height: 380px;
   width: auto;
 }
 
-.post .amazon_link_cta a {
-  font-size: 24px!important;
-  line-height: 36px;
-}
 
 .amazon_link_cta a:hover {  
   background-color: rgba(34, 34, 34, 1)!important;
@@ -12954,7 +12942,7 @@ footer .eltdf-footer-top-holder {
 
 footer .eltdf-footer-top .widget .eltdf-footer-widget-title {
   font-size: 30px!important;
-  margin-bottom: 72px!important;
+  margin-bottom: 40px!important;
 }
 
 footer .eltdf-footer-top:not(.eltdf-footer-top-full) .eltdf-container-inner {
@@ -12963,7 +12951,7 @@ footer .eltdf-footer-top:not(.eltdf-footer-top-full) .eltdf-container-inner {
 
 footer .eltdf-footer-top .widget a  {
   color: #fff!important;
-  font-size: 24px!important;  
+  font-size: 20px!important;  
   font-weight: 300!important;
 }
 
@@ -12999,7 +12987,7 @@ footer .eltdf-social-icon-widget-holder:hover {
 
 footer .eltdf-footer-top #text-10 { 
   clear: both;
-  padding-top: 72px;
+  padding-top: 40px;
 }
 
 /*
@@ -16630,42 +16618,16 @@ footer .eltdf-footer-bottom-holder .widget {
   .author_1_name, 
   .author_2_name, 
   .author_3_name {
-    font-size: 18px!important;
-    line-height: 24px!important; 
+    font-size: 16px!important;
+    line-height: 22px!important; 
   }
 
-  .home h2, .newsletter-registration h2 {
-    font-size: 28px;
-    line-height: 32px;
-}
 }
 
 @media only screen and (max-width: 1024px) {
   .back-button-inner {
     width: 768px;
   } 
-
-  .review_text {    
-    padding: 24px 24px 64px 24px!important;
-  }
-
-  .reviewer_image {      
-    height: 96px!important;
-  }
-
-  .reviewer_name {    
-    font-size: 20px!important;   
-    padding-top: 24px!important; 
-  }
-
-  .reviewer_social_name {        
-    font-size: 14px!important;
-    padding-bottom: 24px!important;
-  }
-
-  .reviewer_details .repeater-child-wrapper {   
-    transform: translate(-50%, -40%)!important;
-  }
 
   .collection-hero .wpb_single_image .vc_single_image-wrapper {    
     max-height: 320px!important;    
@@ -16683,18 +16645,34 @@ footer .eltdf-footer-bottom-holder .widget {
   } 
 }
 
+@media only screen and (max-width: 767px) {
+
+  .post .book-detail-header-image {
+    padding: 32px 12px;
+    text-align: center;
+  }
+
+  .post .book-detail-header-image img {
+    max-height: 240px;
+    width: auto;
+  }
+
+  .book-header-info {
+    padding: 0px 16px 16px 16px!important; 
+  }
+
+  .post .book-title {
+    margin-top: 12px;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 680px) {
   .back-button-inner {
     width: 420px;
   } 
-
-  .review_text {
-    padding: 24px 24px 64px 24px!important;
-  }
-
-  .reviewer_details .repeater-child-wrapper {
-    width: 380px!important;
-  }
 
   .reviewer_image img {    
     left: 48px!important;
@@ -16702,11 +16680,6 @@ footer .eltdf-footer-bottom-holder .widget {
 
   .reviewer_image {
     width: 90px!important;
-  }
-
-  .reviewer_name,
-  .reviewer_social_name {
-    width: 275px!important;
   }
 
   .home .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-square-big .eltdf-mg-image,
@@ -16727,15 +16700,6 @@ footer .eltdf-footer-bottom-holder .widget {
   .eltdf-related-posts-holder {
     padding-left: 15px!important;
     padding-right: 15px!important;
-  }
-
-  .reviewer_details .repeater-child-wrapper {
-    width: 320px!important;
-  }
-
-  .reviewer_name,
-  .reviewer_social_name {
-    width: 215px!important;
   }
 
 }
@@ -20794,20 +20758,6 @@ body .pp_overlay {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
-}
-
-
-
-/* Non-retina screens */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    
-    .signup-box-newsletter .button {
-        background-color: red!important;
-    }
-
 }
 
 
